@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+
+
+### echo'ing strings
+echo_string="medical      data"
+
+echo "${echo_string}" # medical      data
+
+echo ${echo_string}   # medical data
+echo '${echo_string}' # ${echo_string}
+
+
+
+### slicing strings
+slice_string="Mark D. Wilkinson"
+
+# slice by specifying the starting index
+echo "${slice_string:1}" # ark D. Wilkinson
+echo "${slice_string:9}" # ilkinson
+
+# slice of length 4 starting at index 0
+echo "${slice_string::4}" # Mark
+
+# slice of length 3 starting at index 9
+echo "${slice_string:9:3}" # ilk
+
+
+
+
+### deleting substrings (i.e. filtering string)
+
+delete_string="Edsger Wybe Dijkstra"
+
+# remove all 'e' (note that this does not change the underlying string)
+echo "${delete_string/e}" # Edsgr Wybe Dijkstra
+
+
+# remove 'Wybe '
+echo "${delete_string/Wybe }" # Edsger Dijkstra
+
+
+### replacing substrings
+
+replace_string="Her lumbago has been cured"
+
+echo "${replace_string/lumbago/aspecific lower back pain}" # Her aspecific lower back pain has been cured
+
+
+
+
+
+
+
+
+
+
+
