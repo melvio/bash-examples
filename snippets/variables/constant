@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+
+readonly goat="GSP"
+goat="mcgregor"
+# ./variables: line 5: goat: readonly variable
