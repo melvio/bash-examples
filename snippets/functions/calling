@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+
+granulocyte_printer (){
+  echo "neutrophil"
+  echo "eosinophil"
+  echo "basophil"
+}
+
+output=$(granulocyte_printer)
+echo "${output}"
+# neutrophil
+# eosinophil
+# basophil
+
