@@ -4,7 +4,7 @@
 _autocomplete_mycmd() {
   local wordlist="now chaos todos weather"
 
-  COMPREPLY=( $(compgen -W "${wordlist}" -- "") )
+  COMPREPLY=( $(compgen -W "${wordlist}") )
 }
 
 
