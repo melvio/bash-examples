@@ -15,10 +15,10 @@ _autocomplete_mycmd() {
 # 3. This function uses COMPREPLY to provide to provide suggestions
 complete -F _autocomplete_mycmd mycmd
 
-# For this to work you have to source the mycmd-completion.bash file
+# For this to work you have to source the mycmd-completion1.bash file
 #
 # $ source mycmd-completion.bash
-#
+
 # now you can type:
 # $ mycmd <tab>
 # chaos    now      todos    weather
