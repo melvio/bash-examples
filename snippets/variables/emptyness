@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+
+#### [[ -z and [[ -n ####
+
 echo "${common_intestinal_disease}" # (empty echo)
 if [[ -z ${common_intestinal_disease} ]]  ; then   echo '-z ${common_intestinal_disease} is True' ; fi
 if [[ ! -n ${common_intestinal_disease} ]]  ; then echo '-n ${common_intestinal_disease} is False' ; fi
@@ -23,10 +26,6 @@ if [[ -z ${common_intestinal_disease} ]]  ; then   echo '-z ${common_intestinal_
 if [[ ! -n ${common_intestinal_disease} ]]  ; then echo '-n ${common_intestinal_disease} is False' ; fi
 #-z ${common_intestinal_disease} is True
 #-n ${common_intestinal_disease} is False
-
-
-
-
 
 
 

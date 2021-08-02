@@ -1,1 +1,16 @@
-hi
+#!/usr/bin/env bash
+
+# radiology_device is unset
+unset radiology_device
+echo "${radiology_device}" # "" (empty string)
+echo "${radiology_device:-CT-scan}"   # CT-scan
+echo "${radiology_device:-"CT-scan"}" # CT-scan
+
+
+echo "${radiology_device-}"  # "" (empty string)
+echo "${radiology_device:-}" # "" (empty string)
+echo "${radiology_device:}" # ./defaults: ${radiology_device:}: bad substitution
+
+
+
+
