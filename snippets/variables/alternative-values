@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
+
+#### ${var:-...} and ${var-...} ###
+
 # radiology_device is unset
 unset radiology_device
-echo "${radiology_device}" # "" (empty string)
+echo "${radiology_device}"            # "" (empty string)
 echo "${radiology_device:-CT-scan}"   # CT-scan
 echo "${radiology_device:-"CT-scan"}" # CT-scan
 
@@ -10,6 +13,10 @@ echo "${radiology_device:-"CT-scan"}" # CT-scan
 echo "${radiology_device-}"  # "" (empty string)
 echo "${radiology_device:-}" # "" (empty string)
 echo "${radiology_device:}" # ./defaults: ${radiology_device:}: bad substitution
+
+
+
+#### ${var:+...} and ${var+...} ###
 
 # ${var:+} and ${var:} syntax:
 #    Use a different variable if 'var' is set
@@ -39,6 +46,7 @@ echo "${listing:+"cow dog"}"    #  "" (empty string)
 echo "${listing+"fish cat"}"    # fish cat
 
 
+#### ${var:=...} and ${var=...} ###
 
 
 
