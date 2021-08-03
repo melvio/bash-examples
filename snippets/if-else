@@ -66,3 +66,27 @@ fi
 #in return0
 #in return0
 #True
+
+
+echo "--"
+# && and || have equal precedence so you can resolve this from left to right
+if return1 || return0 && return1 ; then
+  # resolving logic: (with False=1 and True=0)
+  #   {return1 => False}
+  # if False || return0 && return1
+  #   {return0 => True}
+  # if False || True && return1
+  #   {resolve ||}
+  # if True && return1
+  #   {return1 => False}
+  # if True && False
+  #   {resolve && }
+  # if False
+  echo "True"
+fi
+#in return1
+#in return0
+#in return1
+
+
+
