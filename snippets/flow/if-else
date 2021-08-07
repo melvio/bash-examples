@@ -14,7 +14,8 @@ if (( $human_genome_project_start < $human_genome_project_finish )) ; then echo 
 # True
 
 
-# True because lexicographical ordering "1990 < 2003"
+# Watch out:
+#   True because lexicographical ordering "1990 < 2003"
 if [[ $human_genome_project_start < $human_genome_project_finish ]] ; then echo "True" ; fi
 # True
 
