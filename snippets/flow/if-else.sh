@@ -5,6 +5,8 @@
 human_genome_project_start=1990
 human_genome_project_finish=2003
 
+if (( human_genome_project_start )) ; then echo "True" ; fi
+# True (because the variable is not 0)
 
 if (( human_genome_project_start < human_genome_project_finish )) ; then echo "True" ; fi
 # True

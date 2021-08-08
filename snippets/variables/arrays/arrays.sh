@@ -8,21 +8,7 @@ echo "${my_array[@]}" # a c
 my_array=(welcome my friend)
 echo "${!my_array[@]}"
 
-my_array=(0 1 2)
 
-# access all the items and loop through the items
-for value in "${my_array[@]}" ; do echo "$value" ; done
-# 0
-# 1
-# 2
-
-for value in "${my_array[*]}" ; do echo "$value" ; done
-# 0 1 2
-
-for value in ${my_array[*]} ; do echo "$value" ; done
-# 0
-# 1
-# 2
 
 my_array=(welcome my friend)
 echo "${my_array[0]}"  # welcome
