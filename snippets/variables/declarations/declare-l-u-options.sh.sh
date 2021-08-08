@@ -7,7 +7,7 @@ declare -l waist_hip_ratio="WHR"
 echo "${waist_hip_ratio}" # whr
 
 waist_hip_ratio="Waist Hip Ratio"
-# even on re-assignment; this 'lower' propery remains
+# even on re-assignment; this 'lower' property persists
 echo "${waist_hip_ratio}" # waist hip ratio
 
 
