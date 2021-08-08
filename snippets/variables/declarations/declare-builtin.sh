@@ -7,15 +7,15 @@
 #   declare [-p|-f|-F] {name}...       -- for printing the specified declared variables and/or functions
 
 # usage (for declaring and optionally setting vars):
-#   declare -a|-A]  {name[=value]}...  -- for arrays
+#   declare -a|-A   {name[=value]}...  -- for arrays
 #   declare -i      {name[=value]}...  -- for integers
 #                                         Variables with the integer attribute have arithmetic evaluation (see
-#                                         the `let' command) performed when the variable is assigned a value.
+#                                         the `let` command) performed when the variable is assigned a value.
 #   declare -l|-u   {name[=value]}...  -- for variables that will get lower/upper case values automatically
 #   declare -n      {name=var_name}... -- to make 'name' a reference to another variable
 #   declare -r      {name[=value]}...  -- to make 'name' readonly
 #   declare -x      {name[=value]}...  -- to make 'name' export
-#   declare -t      {name[=value]}...  -- to make a function traceable (has no usage
+#   declare -t      {name[=value]}...  -- to make a function traceable (has no usage for vars)
 
 # usage (for declaring and optionaly setting variables within a function body):
 #   declare [opt]...{name[=value]}...  -- works as usual, but keeps the variable local automatically
