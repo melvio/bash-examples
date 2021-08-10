@@ -22,12 +22,21 @@ printf "\" \n"
 # 1 backslash
 printf "\\ \n"
 
+# tab
+printf "\t \n"
+
+# single '%'
+printf '%% \n'
 
 
 
+echo "-- errors -- "
+
+# invalid '%' is missing a subsequent format character
+printf '% \n' ; echo $?  # 1
 
 # invalid, printf needs at least an empty string
-#printf ; echo $? # 2
+printf ; echo $?        # 2
 
 
 
