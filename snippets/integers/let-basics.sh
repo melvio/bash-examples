@@ -21,7 +21,7 @@ c=4
 let a=b * c # This will evaluate to:  let a=b declaration.sh let-basics.sh {more files} c
 echo "${a}" # 2     (since only a=b was evaluated before the syntax error occurred)
 
-# this does work (somehow now the * is not evaluated as a globbing operator)
+# this does work (now the * is not evaluated as a globbing operator)
 let a=b*c
 echo "${a}" # 8
 
