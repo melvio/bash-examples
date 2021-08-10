@@ -8,7 +8,7 @@ round_down_positive_float(){
   # * Scientific notation requires other approaches.
   # * negative floats will be rounded up
   the_float="$1"
-  echo "${the_float%.*}"
+  LC_ALL=C echo "${the_float%.*}"
 }
 
 round_down_positive_float "${golden_ratio}"  #  1
