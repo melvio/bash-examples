@@ -23,10 +23,13 @@ inside_function_scoping_is_human 46
 # number of chromosomes 46
 # is human: maybe human
 inside_function_scoping_is_human "-1"
-
 # fewer than 0 chromosomes not supported
 # number of chromosomes -1
 # is human: maybe human      # <- globally available, so remembered
+
+
+
+
 
 inside_function_scoping_is_human2() {
   # <https://en.wikipedia.org/wiki/List_of_organisms_by_chromosome_count>
